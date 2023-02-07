@@ -1,7 +1,6 @@
 # Include Imports Here
 import os
 import streamlit as st
-from pdfminer.high_level import extract_text
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores.faiss import FAISS
 from langchain.text_splitter import CharacterTextSplitter

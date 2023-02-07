@@ -1,6 +1,8 @@
-streamlit 
-OpenAI
-OpenAIEmbeddings
-VectorDBQA
-CharacterTextSplitter
-FAISS
+faiss-gpu
+datasets
+torch
+streamlit
+pinecone-client
+sentence-transformers
+langchain
+openai

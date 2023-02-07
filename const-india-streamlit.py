@@ -23,5 +23,5 @@ docsearch = FAISS.from_texts(texts, embeddings)
 
 qa = VectorDBQA.from_chain_type(llm=OpenAI(), chain_type="stuff", vectorstore=docsearch)
 
-query = "What are the circular numbers in this file?"
+query = "Which is the version of the document, and when was this updated?"
 st.write(qa.run(query))

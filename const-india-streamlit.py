@@ -1,6 +1,5 @@
 # Include Imports Here
 import os
-import numexpr
 import streamlit as st
 from pdfminer.high_level import extract_text
 from langchain.embeddings.openai import OpenAIEmbeddings

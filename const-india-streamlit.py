@@ -10,7 +10,7 @@ from langchain import OpenAI, VectorDBQA
 
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 with open('COI_English.txt') as f:
     sebitext = f.read()

@@ -22,7 +22,7 @@ st.title('Understand Finance Minister\'s budget speech 2023-2024')
 
 st.write('This webpage is designed to query FM\'s Budget Speech using Open AI\'s GPT-3 language processing technology. The page will allow users to search through the speech and find relevant information quickly and easily. With GPT-3\'s advanced natural language processing, users will be able to easily find exactly what they are looking for in the speech. Additionally, the page will provide users with a comprehensive summary of the contents of the speech so they can quickly get an overview of the main points.') 
 
-st.write('Please navigate to [link](https://www.indiabudget.gov.in/doc/budget_speech.pdf) for the full text of the speech)
+st.write('Please navigate to [link](https://www.indiabudget.gov.in/doc/budget_speech.pdf) for the full text of the speech')
 
 query = st.text_input('Enter your query in this text box about FM\'s 2023-2024 Budget speech','What are the differences in tax ceilings this year for salaried citizens?')
 st.write(qa.run(query))

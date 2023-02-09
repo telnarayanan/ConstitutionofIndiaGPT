@@ -18,6 +18,9 @@ docsearch = FAISS.from_texts(texts, embeddings)
 qa = VectorDBQA.from_chain_type(llm=OpenAI(), chain_type="stuff", vectorstore=docsearch)
     #query = "What is this document about? When was this document last updated?"
 
-st.title('DocQuery Sample')
-query = st.text_input('Enter your query to be asked to the Indian Constitution', 'What is this document about?')
+st.title('Understand Finance Minister''s budget speech 2023-2024')
+
+st.write('This webpage is designed to query FM''s Budget Speech using Open AI''s GPT-3 language processing technology. The page will allow users to search through the speech and find relevant information quickly and easily. With GPT-3''s advanced natural language processing, users will be able to easily find exactly what they are looking for in the speech. Additionally, the page will provide users with a comprehensive summary of the contents of the speech so they can quickly get an overview of the main points.') 
+
+query = st.text_input('Enter your query to be asked to the FM''s 2023-2024 speech','What are the differences in tax ceilings this year for salaried citizens?')
 st.write(qa.run(query))

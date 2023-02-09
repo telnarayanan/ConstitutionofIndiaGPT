@@ -9,7 +9,7 @@ from langchain import OpenAI, VectorDBQA
 
 @st.cache
 def callGPT3LLM(query):
-    os.environ["OPENAI_API_KEY"] = config.api_key
+    os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
     with open("COI_English.txt", "r", encoding="utf8") as f:
         constitution_text = f.read()
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)

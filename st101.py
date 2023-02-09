@@ -1,5 +1,5 @@
 # List of Imports
-
+import config
 import os
 import streamlit as st
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -9,7 +9,7 @@ from langchain import OpenAI, VectorDBQA
 
 @st.cache
 def callGPT3LLM(query):
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = config.api_key
     with open("COI_English.txt", "r", encoding="utf8") as f:
         constitution_text = f.read()
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)

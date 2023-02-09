@@ -19,5 +19,5 @@ qa = VectorDBQA.from_chain_type(llm=OpenAI(), chain_type="stuff", vectorstore=do
     #query = "What is this document about? When was this document last updated?"
 
 st.title('DocQuery Sample')
-query = st.text_input('Enter your query to be asked to the SEBI text file', 'What is this document about?')
+query = st.text_input('Enter your query to be asked to the Indian Constitution', 'What is this document about?')
 st.write(qa.run(query))
